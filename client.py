@@ -28,4 +28,4 @@ class ObjectDetectionClient(fl.client.NumPyClient):
 
 # Start Flower client
 if __name__ == "__main__":
-    fl.client.start_client(server_address="[::]:8080", client=ObjectDetectionClient())
+    fl.client.start_numpy_client("[::]:8080", client=ObjectDetectionClient())
